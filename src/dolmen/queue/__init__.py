@@ -1,7 +1,2 @@
-try:
-    __import__('pkg_resources').declare_namespace(__name__)
-except ImportError:
-    from pkgutil import extend_path
-    __path__ = extend_path(__path__, __name__)
-
-FILESHOME = "/home/trollfot/postaleo_files"
+from dolmen.queue.interfaces import ITask, ICallbackTask, ITaskManager
+from dolmen.queue.container import TaskContainer
